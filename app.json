@@ -21,6 +21,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "facebookScheme": "fb384648608904978",
+    "facebookAppId": "384648608904978",
+    "facebookDisplayName": "Trường",
   }
 }
