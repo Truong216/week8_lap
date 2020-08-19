@@ -146,78 +146,7 @@ export default function App() {
   );
 }
 
-// function HomeScreen({navigation}) {
-//     async function logIn() {
-//       try {
-//         await Facebook.initializeAsync('384648608904978');
-//         const {
-//           type,
-//           token,
-//           expires,
-//           permissions,
-//           declinedPermissions,
-//         } = await Facebook.logInWithReadPermissionsAsync({
-//           permissions: ['public_profile'],
-//         });
-//         if (type === 'success') {
-//           // Get the user's name using Facebook's Graph API
-//           const response = await fetch(`https://graph.facebook.com/me?access_token=${token}`);
-//           Alert.alert('Đăng nhập thành công!', `Hi ${(await response.json()).name}!`);
-//           navigation.navigate('Main');
-//           await AsyncStorage.setItem('@token', token);
-//           await AsyncStorage.setItem('@status', "đăng nhập");
-//         } else {
-//           // type === 'cancel'
-//         }
-//       } catch ({ message }) {
-//         alert(`Facebook Login Error: ${message}`);
-//       }
-//     }
-//     return (
-//       <View
-//         style={{
-//           flex: 1,
-//           alignItems: 'center',
-//           justifyContent: 'center',
-//           backgroundColor: 'orange',
-//         }}>
-//         <LinearGradient
-//           // Background Linear Gradient
-//           colors={['rgba(0,0,0,0.8)', 'transparent']}
-//           style={{
-//             position: 'absolute',
-//             left: 0,
-//             right: 0,
-//             top: 0,
-//             height: 300,
-//           }}
-//         />
-//         <TouchableHighlight onPress={logIn}>
-//         <LinearGradient
-//           // Button Linear Gradient
-//           colors={['#4c669f', '#3b5998', '#192f6a']}
-//           style={{ padding: 15, alignItems: 'center', borderRadius: 5 }}>
-//           <Text
-//             style={{
-//               backgroundColor: 'transparent',
-//               fontSize: 15,
-//               color: '#fff',
-//             }}>
-//             Đăng Nhập Facebook
-//           </Text>
-//         </LinearGradient>
-//         </TouchableHighlight>
-//       </View>
-//     );
-//   }
 
-//   function MainScreen({navigation}) {
-//   return(
-//   <View style={{flex: 1, justifyContent:"center", alignItems: "center"}}>
-//       <Text>Bạn Đã đăng nhập thành công</Text>  
-//   </View>
-//   );
-// }
 
 // export default function App({ navigation }) {
 //   const [state, dispatch] = React.useReducer(
